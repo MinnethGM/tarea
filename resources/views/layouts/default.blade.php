@@ -90,7 +90,7 @@ desired effect
               <!-- The user image in the navbar-->
               <img src="/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">Minneth Garcia Hermosa</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -123,7 +123,10 @@ desired effect
                   <a href="/#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="/#" class="btn btn-default btn-flat">Sign out</a>
+                  <form action="{{route('logout')}}" method="POST">
+                  @csrf
+                  <a type="submit" class="btn btn-default btn-flat">Sign out</a>
+                  </form>
                 </div>
               </li>
             </ul>
@@ -146,7 +149,7 @@ desired effect
           <img src="/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Minneth Garcia Hermosa</p>
 
         </div>
       </div>
